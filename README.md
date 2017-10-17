@@ -28,6 +28,14 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 24c381089c39        h3nrik/apacheds     "/run.sh"                21 minutes ago      Up 5 seconds        0.0.0.0:389->10389/tcp   apacheds
 ```
 
+### Add ldap entries
+Run following command to add entries to apache ds, which is ldap server
+
+```
+sh ./create-test-ldap-entries.sh
+```
+
+
 ### Check login
 To check ldap-demo is running correctly, you need to get the ip address of the vm. it probably 192.168.99.100, but it may be different. So run following command and check the ip address of the default vm.
 
